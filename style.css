@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+/* span{
+    font-family: 'Miama', sans-serif;
+    font-size: 200px;
+} */
+/* shared display */
+.d-Flex{
+    display: flex;
+}
+.m-Auto{
+    margin: 0 auto;
+}
+/* Header Part  */
+header{
+    background-color: rgb(32, 32, 32);
+    color: white;
+    width: 100%;
+    /* max-width: 1240px; */
+}
+.navbar{
+    width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 17px;
+}
+.nav-ul{
+    border: 1px solid gray;
+    border-radius: 50px;
+}
+.nav-ul li{
+    list-style-type: none;
+    font-size: 20px;
+    margin-right: 25px;
+    padding: 10px;
+}
+#special-home-button{
+    border: none;
+    background-color: #E6533C;
+    border-radius: 50px;
+    padding: 10px;
+}
+.fa-solid{
+    font-size: 22px;
+}
+/* Header Part  */
+
+
+
+/* small device */
+@media screen and (max-width : 576px){
+    header{
+        width: 100%;
+    }
+    .navbar{
+        width: 400px;
+    }
+    .nav-ul{
+        display: none;
+    }
+}
+
+/* Medium Device */
+@media screen and (min-width : 577px) and (max-width : 992px){
+    header{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .navbar .fa-solid{
+        display: none;
+    }
+}
+/* larger device */
+@media screen and (min-width : 993px) and (max-width : 2500px){
+    header{
+        width: 100%;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .navbar .fa-solid{
+        display: none;
+    }
+    
+}
