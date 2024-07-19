@@ -10,36 +10,46 @@ body{
     font-optical-sizing: auto;
     font-style: normal;
 }
-/* span{
-    font-family: 'Miama', sans-serif;
-    font-size: 200px;
-} */
-/* shared display */
+/* share style */
 .d-Flex{
     display: flex;
 }
 .m-Auto{
     margin: 0 auto;
 }
-/* Header Part  */
-header{
-    background-color: rgb(32, 32, 32);
+.same-btn{
+    border: 0;
+    background-color: #E6533C;
+    padding: 12px 40px;
     color: white;
-    width: 100%;
-    /* max-width: 1240px; */
+    font-size: 17px;
+    border-radius: 24px;
 }
+/* header */
+header{
+    max-width: 1300px;
+    padding: 10px 20px;
+    background-color: rgb(29, 29, 29);
+}
+/* header */
+/* navbar */
 .navbar{
-    width: 1000px;
-    margin: 0 auto;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 17px;
 }
-.nav-ul{
+.nav-title{
+    font-size: 35px;
+    color: #E6533C;
+}
+.ul-list{
+    display: flex;
+    margin-right: 25px;
     border: 1px solid gray;
     border-radius: 50px;
 }
-.nav-ul li{
+.ul-list li{
+    color: white;
     list-style-type: none;
     font-size: 20px;
     margin-right: 25px;
@@ -51,49 +61,181 @@ header{
     border-radius: 50px;
     padding: 10px;
 }
-.fa-solid{
+#bar{
+    color: white;
     font-size: 22px;
 }
+
+
+@media screen and (max-width: 576px) {
+    header{
+        width: 100%;
+        padding: 5px 15px;
+    }
+    .ul-list{
+        display: none;
+    }
+
+}
+/* medium screen */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    header{
+        width: 100%;
+        padding: 5px 15px;
+    }
+    #bar{
+        display: none;
+    }
+
+}
+
+/* large screen */
+@media screen and (min-width: 993px) and (max-width: 2000px){
+    header{
+        width: 100%;
+    }
+    #bar{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Header Part  */
+/* header{
+    background-color: rgb(32, 32, 32);
+    color: white;
+    width: 100%; */
+    /* max-width: 1240px; */
+/* } */
+/* .navbar{
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center; */
+    /* padding-top: 17px; */
+/* } */
+/* .nav-ul{
+    border: 1px solid gray;
+    border-radius: 50px;
+} */
+/* .nav-ul li{
+    list-style-type: none;
+    font-size: 20px;
+    margin-right: 25px;
+    padding: 10px;
+} */
+/* #special-home-button{
+    border: none;
+    background-color: #E6533C;
+    border-radius: 50px;
+    padding: 10px;
+}
+.fa-solid{
+    font-size: 22px;
+} */
+/* .header-section{ */
+    /* border: 2px solid white; */
+    /* max-width: 1100px;
+    height: 600px; */ 
+    /* justify-content: center;
+    align-items: center;
+}
+.left-side{
+
+}
+.right-side{
+    position: relative;
+}
+.left-side h1{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+.left-side p{
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+.button{
+    margin-top: 50px; */
+/* }
+.btn-2{
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 12px 40px;
+    color: white;
+    font-size: 17px;
+    border-radius: 24px;
+}
+.content-1{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    opacity: 0.3;
+    width: 200px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 150px;
+    left: 230px;
+    overflow: hidden;
+}
+.content-1 h1{
+    font-size: 40px; */
+/* }
+.content-2{
+    width: 200px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    opacity: 0.5;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    top: 430px;
+    right: 310px;
+}
+.content-description h1{
+    font-size: 40px;
+}
+.fa-solid{
+    color: #E6533C;
+} */
 /* Header Part  */
 
-
-
-/* small device */
-@media screen and (max-width : 576px){
-    header{
-        width: 100%;
-    }
-    .navbar{
-        width: 400px;
-    }
-    .nav-ul{
-        display: none;
-    }
-}
-
-/* Medium Device */
-@media screen and (min-width : 577px) and (max-width : 992px){
-    header{
-        width: 100%;
-        padding: 0 20px;
-    }
-    .navbar{
-        width: 100%;
-    }
-    .navbar .fa-solid{
-        display: none;
-    }
-}
-/* larger device */
-@media screen and (min-width : 993px) and (max-width : 2500px){
-    header{
-        width: 100%;
-    }
-    .navbar{
-        width: 100%;
-    }
-    .navbar .fa-solid{
-        display: none;
-    }
-    
-}
