@@ -12,15 +12,16 @@ body{
 }
 /* header */
 header{
-    max-width: 1280px;
+    max-width: 1300px;
     height: auto;
     padding: 10px 20px;
-    background-color: rgb(29, 29, 29);
+    background-color: rgba(17, 17, 17, 2.5);
 }
 /* header */
 /* navbar and banner */
 .navbar{
     width: 900px;
+    padding-top: 15px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -127,6 +128,61 @@ header{
     font-size: 30px;
 }
 
+/* Habits Part */
+.habit-section{
+    max-width: 1300px;
+    background-color: black;
+}
+.habit-title{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-size: 48px;
+    color: white;
+}
+.habit-para{
+    font-size: 16px;
+    text-align: center;
+    color: gray;
+    margin-bottom: 35px;
+}
+.habit-img-card-parent{
+    /* border: 1px solid white; */
+    margin: 0 auto;
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.habit-img{
+    border-radius: 50%;
+    padding-bottom: 15px;
+}
+.div-1 h2{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: white;
+}
+.div-1 p{
+    color: gray;
+}
+/* Habits Part */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive styles for small devices */
 @media screen and (max-width: 576px) {
     header{
@@ -191,6 +247,22 @@ header{
         color: #E6533C;
         font-size: 30px;
     }
+    .habit-section{
+        width: 100%;
+    }
+    .habit-img-card-parent{
+        width: 60%;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+    .div-1 h2{
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 14px;
+    }
+
+    
+    
 }
 
 /* Responsive styles for medium devices */
@@ -246,9 +318,17 @@ header{
         font-size: 16px;
         padding: 10px 30px;
     }
+    .habit-section{
+        width: 100%;
+    }
+    .habit-img-card-parent{
+        width: 60%;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
 }
 /* large device */
-@media (min-width: 993px) and (max-width: 1800px){
+@media (min-width: 993px) and (max-width: 2000px){
     #bar {
         display: none;
     }
