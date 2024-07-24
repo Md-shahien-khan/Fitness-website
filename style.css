@@ -211,7 +211,102 @@ header{
 /* Run extra mile part */
 
 
+/* Trainings and Exercises */
+/* BMI Calculator */
+.bmi-top{
+    max-width: 1300px;
+    background-color: black;
+    padding: 50px;
+    color: white;
+}
+.bmi-top > h1{
+    margin-left: 230px;
+    color: white;
+    font-size: 48px;
+}
+.bmi-top > p{
+    margin-left: 230px;
+    color: gray;
+    margin-top: 10px;
+    line-height: 25px;
+}
+.bmi{
+    /* display: none; */
+    max-width: 1300px;
+    background-color: rgba(34, 34, 34, 1.00);
+}
+.bmi-parent{
+    width: 900px;
+    display: flex;
+    margin: 0 auto;
+}
 
+.left-bmi, .right-bmi{
+    width: 50%;
+}
+.bmi-header{
+    font-size: 32px;
+    color: white;
+    margin-bottom: 30px;
+}
+.bmi-p{
+    color: rgb(155, 153, 153);
+    margin-bottom: 23px;
+}
+table{
+    width: 80%;
+    border-collapse: collapse;
+    /* margin: 0 auto; */
+}
+th, td{
+    border: 2px solid rgb(94, 92, 92);
+    padding: 15px;
+    color: white;
+}
+th{
+    text-align:left;
+}
+.bmi-header{
+    margin-top: 30px;
+}
+.input-grid{
+    /* width: 50%; */
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    column-gap: 10px;
+    /* margin-bottom: 20px; */
+}
+input[type="text"],input[type="number"]{
+   background-color: rgb(56, 56, 56);
+   color: rgb(255, 252, 252);
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+.same-btn-2{
+    margin-top: 30px ;
+    width: 50%;
+    border: 0;
+    background-color: #E6533C;
+    padding: 12px 40px;
+    color: white;
+    font-size: 17px;
+    border-radius: 24px;
+}
+select{
+   background-color: rgb(56, 56, 56);
+   color: rgb(255, 252, 252);
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+.input-grid-2 > select{
+    width: 100%;
+}
 
 
 
@@ -316,6 +411,30 @@ header{
         width: 100%;
         height: auto;
     }
+    .bmi-top{
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+    }
+    .bmi-top > p, .bmi-top > h1{
+        padding: 10px;
+        margin-left: 0;
+    }
+    .bmi-parent{
+        width: 100%;
+        flex-direction: column;
+    }
+    .right-bmi, .left-bmi{
+        padding: 10px;
+        width: 100%;
+    }
+
+    input[type="text"],input[type="number"], select{
+        padding: 10px;
+    }
+    .same-btn-2{
+        width: 40%;
+    }
     
 }
 
@@ -355,7 +474,6 @@ header{
     .btn-div {
         display: flex;
         gap: 20px;
-        /* flex-direction: row; */
     }
     .img-btn-2{
         display: flex;
@@ -392,6 +510,30 @@ header{
     .left-part, .right-part{
         padding: 30px;
         /* width: 100%; */
+    }
+    .bmi-top{
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+    }
+    .bmi-top > p, .bmi-top > h1{
+        padding: 10px;
+        margin-left: 0;
+    }
+    .bmi-parent{
+        width: 100%;
+        flex-direction: column;
+    }
+    .right-bmi, .left-bmi{
+        padding: 10px;
+        width: 100%;
+    }
+
+    input[type="text"],input[type="number"], select{
+        padding: 10px;
+    }
+    .same-btn-2{
+        width: 30%;
     }
 }
 /* large device */
