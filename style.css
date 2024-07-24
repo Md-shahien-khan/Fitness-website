@@ -306,6 +306,7 @@ select{
 }
 .input-grid-2 > select{
     width: 100%;
+    padding: 14px 20px;
 }
 
 
