@@ -32,6 +32,10 @@ header{
     font-size: 35px;
     color: #E6533C;
 }
+.shape{
+    font-family: 'Miama Nueva', sans-serif;
+                                                
+}
 .ul-list{
     display: flex;
     margin-right: 25px;
@@ -165,6 +169,7 @@ header{
 }
 .div-1 p{
     color: gray;
+    padding-bottom: 20px;
 }
 /* Habits Part */
 
@@ -190,6 +195,7 @@ header{
     object-position: 66% 30%;
 }
 .left-part, .right-part{
+    width: 50%;
     padding: 30px;
 }
 .left-part h1{
@@ -276,7 +282,7 @@ th{
 }
 input[type="text"],input[type="number"]{
    background-color: rgb(56, 56, 56);
-   color: rgb(255, 252, 252);
+   color: rgb(101, 100, 100);
    padding: 14px 20px;
    margin: 8px 0;
    border: none;
@@ -295,7 +301,7 @@ input[type="text"],input[type="number"]{
 }
 select{
    background-color: rgb(56, 56, 56);
-   color: rgb(255, 252, 252);
+   color: rgb(156, 153, 153);
    padding: 14px 20px;
    margin: 8px 0;
    border: none;
@@ -304,7 +310,8 @@ select{
 }
 .input-grid-2 > select{
     width: 100%;
-    padding: 14px 20px;
+    padding: 14px 8px;
+    color: rgb(156, 153, 153);
 }
 
 
@@ -314,8 +321,21 @@ select{
 .meet-team{
     max-width: 1300px;
     background-color: black;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
+}
+.team-top{
+    width: 700px;
+    text-align: center;
+    color: aliceblue;
+    padding: 30px;
+    margin: 0 auto;
+}
+.team-top h1{
+    font-size: 46px;
+}
+.team-top p{
+    padding-top: 10px;
+    color: gray;
 }
 .grid-container{
     display: grid;
@@ -344,11 +364,54 @@ select{
 }
 /* Meet Our Team Section */
 
-
-
-
-
-
+/* Footer */
+footer{
+    max-width: 1300px;
+    background-color: rgb(30, 29, 29);
+    color: aliceblue;
+    height: 320px;
+}
+.footer-main{
+    margin: 0 auto;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+    padding-top: 50px;
+}
+.footer-right{
+    /* border: 2px solid palegreen; */
+    display: flex;
+    gap: 120px;
+}
+#fitness-header{
+    font-size: 48px;
+    color: #E6533C;
+    padding-bottom: 15px;
+}
+.item-right-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ #fitness-para{
+    font-size: 14px;
+    color: rgb(149, 147, 147);
+}
+.fitness-para{
+    color: rgb(149, 147, 147);
+} 
+.footer-hr{
+    width: 1000px;
+    margin: 20px auto;
+    background-color: gray;
+}
+.footer-last-para{
+    color: gray;
+    /* text-align: center; */
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
 
 
 /* Responsive styles for small devices */
@@ -373,13 +436,14 @@ select{
         width: 100%;
         flex-direction: column;
         gap: 20px;
-        padding: 0 10px;
+        padding: 20px 0;
     }
     .banner-title {
         font-size: 35px;
         line-height: 1.2;
     }
     .banner-p {
+        width: 50%;
         font-size: 14px;
     }
     .banner-img {
@@ -423,10 +487,21 @@ select{
         grid-template-columns: repeat(1, 1fr);
         text-align: center;
     }
+    .habit-title{
+        font-size: 30px;
+        /* width: 80%; */
+    }
+    .habit-para{
+        /* font-size: 16px; */
+        padding: 0px 20px;
+    }
     .div-1 h2{
         text-align: center;
         padding-bottom: 10px;
         font-size: 14px;
+    }
+    .left-part, .right-part{
+        width: 100%;
     }
     .run-extra-mile-section{
         width: 100%;
@@ -441,6 +516,10 @@ select{
     .run-image{
         width: 100%;
         height: auto;
+        object-fit: cover;
+    }
+    .bmi-header{
+        font-size: 20px;
     }
     .bmi-top{
         width: 100%;
@@ -473,11 +552,35 @@ select{
         width: 80%;
         grid-template-columns: repeat(1, 1fr);
     }
+    .team-top{
+        width: 100%;
+    }
+    .team-top p{
+        font-size: 12px;
+        color: gray;
+    }
     .grid-item{
         width: 100%;
     }
     .trainer-img{
         width: 100%;
+    }
+    footer{
+        width: 100%;
+        height: auto;
+    }
+    .footer-main{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 35px;
+        padding-left: 15px;
+    }
+    .footer-right{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-hr{
+        width: 95%;
     }
 }
 
@@ -551,6 +654,7 @@ select{
     }
     .run-image{
         width: 100%;
+        height: 400px;
     }
     .left-part, .right-part{
         padding: 30px;
@@ -579,6 +683,9 @@ select{
     .same-btn-2{
         width: 30%;
     }
+    .team-top{
+        width: 100%;
+    }
     .meet-team{
         width: 100%;
     }
@@ -590,6 +697,25 @@ select{
     }
     .trainer-img{
         width: 100%;
+    }
+    footer{
+        width: 100%;
+        height: auto;
+    }
+    .footer-main{
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 15px;
+    }
+    /* .footer-right{
+        flex-direction: column;
+        gap: 20px;
+    } */
+    .footer-hr{
+        width: 90%;
+    }
+    .footer-last-para{
+        text-align: center;
     }
 }
 
@@ -608,6 +734,9 @@ select{
     }
     .banner {
         margin-top: 15px;
+    }
+    .footer-last-para{
+        text-align: center;
     }
 }
 
