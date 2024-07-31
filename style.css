@@ -18,6 +18,7 @@ header{
     background-color: rgba(17, 17, 17, 2.5);
 }
 /* header */
+
 /* navbar and banner */
 .navbar{
     width: 900px;
@@ -147,7 +148,6 @@ header{
     margin-bottom: 35px;
 }
 .habit-img-card-parent{
-    /* border: 1px solid white; */
     margin: 0 auto;
     width: 900px;
     display: grid;
@@ -179,7 +179,6 @@ header{
     width: 900px;
     margin: 0 auto;
     border-radius: 19px;
-    /* border: 1px solid blue; */
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -187,6 +186,8 @@ header{
 .run-image{
     height: 270px;
     border-radius: 19px;
+    object-fit: none;
+    object-position: 66% 30%;
 }
 .left-part, .right-part{
     padding: 30px;
@@ -231,7 +232,6 @@ header{
     line-height: 25px;
 }
 .bmi{
-    /* display: none; */
     max-width: 1300px;
     background-color: rgba(34, 34, 34, 1.00);
 }
@@ -239,6 +239,7 @@ header{
     width: 900px;
     display: flex;
     margin: 0 auto;
+    padding-bottom: 20px;
 }
 
 .left-bmi, .right-bmi{
@@ -256,7 +257,6 @@ header{
 table{
     width: 80%;
     border-collapse: collapse;
-    /* margin: 0 auto; */
 }
 th, td{
     border: 2px solid rgb(94, 92, 92);
@@ -270,11 +270,9 @@ th{
     margin-top: 30px;
 }
 .input-grid{
-    /* width: 50%; */
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     column-gap: 10px;
-    /* margin-bottom: 20px; */
 }
 input[type="text"],input[type="number"]{
    background-color: rgb(56, 56, 56);
@@ -312,7 +310,39 @@ select{
 
 
 
-
+/* Meet Our Team Section */
+.meet-team{
+    max-width: 1300px;
+    background-color: black;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1000px;
+    gap: 20px;
+    background-color: rgb(33, 32, 31);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0 auto;
+}
+.trainer-img{
+    width: 300px;
+    height: 250px;
+    border-radius: 15px;
+}
+.grid-item{
+    width: 250px;
+    position: relative;
+}
+.trainer-info{
+    position: absolute;
+    color: white;
+    top: 180px;
+    left: 20px;
+}
+/* Meet Our Team Section */
 
 
 
@@ -436,8 +466,22 @@ select{
     .same-btn-2{
         width: 40%;
     }
-    
+    .meet-team{
+        width: 100%;
+    }
+    .grid-container{
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid-item{
+        width: 100%;
+    }
+    .trainer-img{
+        width: 100%;
+    }
 }
+
+
 
 /* Responsive styles for medium devices */
 @media (min-width: 577px) and (max-width: 992px) {
@@ -510,7 +554,6 @@ select{
     }
     .left-part, .right-part{
         padding: 30px;
-        /* width: 100%; */
     }
     .bmi-top{
         width: 100%;
@@ -536,7 +579,22 @@ select{
     .same-btn-2{
         width: 30%;
     }
+    .meet-team{
+        width: 100%;
+    }
+    .grid-container{
+        width: 90%;
+    }
+    .grid-item{
+        width: 100%;
+    }
+    .trainer-img{
+        width: 100%;
+    }
 }
+
+
+
 /* large device */
 @media (min-width: 993px) and (max-width: 2000px){
     #bar {
