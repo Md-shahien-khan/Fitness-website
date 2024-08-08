@@ -390,25 +390,21 @@ select{
     color: white;
 }
 .bonus-p{
-    font-size: 18px;
+    font-size: 16px;
     color: silver;
 }
 .text-area{
     width: 300px;
-    background-color: rgb(56, 54, 54);
+    background-color: transparent;
+    transition: 0.5s;
     color: wheat;
     margin-bottom: 20px;
     margin-top: 10px;
 }
-.text-area:hover{
-    /* border: none; */
-    background-color: transparent;
-    color: white;
-    font-size: 12px;
-}
 .text-div > p{
+    font-size: 14px;
     transition: 0.5s;
-    color: rgb(211, 180, 180);
+    color: rgb(255, 255, 255);
     padding-bottom: 20px; 
 }
 .btn-submit{
@@ -423,11 +419,9 @@ select{
 .btn-submit:hover{
     background-color: transparent;
     border: 2px solid white;
-    font-size: 20px;
+    /* font-size: 20px; */
     transition: 1s;
-    width: 70%;
-    font-size: 21px;
-    
+    width: 50%;
 }
 /* diet plan part */
 
